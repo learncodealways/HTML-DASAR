@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Link HTML</title>
+</head>
+<body>
+    <!-- link HTML
+      - Saat membuat web, biasanya kita akan membuat banyak sekali halaman HTML
+      -Untuk berpindah dari satu halaman ke halaman lain, kita biasanya jarang melakukannya secara manual dengan cara mengetikkannya di search bar web browser
+      - HTML memiliki fitur link denga tag <a></a> (anchor) dan memiliki atribut href="", target, download, rel  yaitu :
+        target="_blank" (Membuka jendela baru atau tab baru)
+      
+        target="_self" (Membuka jendela yang sama atau tab sama)
+       
+        target="_parent" ( Membuka tautan di frame induk (jika ada))
+       
+        target="_top" (Membuka tautan di jendela penuh)
+    
+        download: Atribut ini memberi tahu browser untuk mengunduh sumber daya yang ditautkan daripada menavigasi ke sumber daya tersebut. Contoh penggunaan: <a href="path/to/file.pdf" download>Download PDF</a>.
+
+        Contoh tag anchor dengan beberapa atribut:
+       
+        <a href="https://www.example.com" target="_blank" download rel="nofollow">Link Example</a>
+
+     
+      rel: Atribut ini menentukan hubungan antara halaman saat ini dan halaman yang ditautkan. Misalnya, rel="nofollow" dapat digunakan untuk menunjukkan bahwa mesin pencari seharusnya tidak mengikuti tautan tersebut.
+      dimana kita bisa mengklik link tersebut dan berpindah ke halaman HTML lain
+      - Link tidak harus dalam bentuk text, link juga bisa dalam bentuk gambar
+
+             JENIS - JENIS LINK
+            
+        1. Absolute URL
+         
+         - Saat kita menulis halaman tujuan dari href link, kita bisa menggunakan absolute URL
+         - Absolute URL merupakan alamat lengkap sebuah tujuan link
+         - Dalam absolute URL, kita wajib menuliskan seluruh deatil dan halaman yang dituju, misal
+         https://youtube.com
+         https://facebook.com
+         https://instagram.com
+         
+         - Kelebihan menggunakan absolute URL adalah, kita bisa membuat link menuju domain yang berbeda dengan website yang kita buat
+
+        
+        
+         2.  Relative URL
+          
+         - Relative URL adalah lokai href dimana tetap menggunakan domain website saat ini
+         - Relative URL memiliki dua format, bisa diawali dengan / atau tidak diawali dengan / 
+      
+         - Misal sekarang kita berada di halaman http://127.0.0.1/DASAR-HTML/list.html artinya "HTML tolong arahkah saya ke  link list.html yang berada didalam folder DASAR-HTML (<a href="DASAR-HTML/list.html">list</a>)"
+        
+         - https://127.0.0.1/latihan-link1.html arinya "HTML tolong arahkan saya ke link latihan-link1 yang terdapat dalam sumber atau folder utama (<a href="/latihan-link1.html>latihan-link1</a>")"
+
+         -https://127.0.0.1/Latihan/latihan-link2.html artinya "HTML tolong arahkan saya ke link latihan-link2.html yang berada didalam folder Latihan (<a href="Latihan/latihan-link2.html>latihan-link2</a>")"
+
+        
+         
+         3. Bookmark
+          
+          - Pada kasus halaman web yang sangat panjang, ada bagusnya kita menggunakan bookmark
+          - Bookmark adalah link yang bisa digunakan untuk menampilkan HTML element dengan id tertentu
+          - Bookmark menggunakan #(crash) pada href, misal jika kita menggunakan idex.html#eko, artinya ketika membuka halaman index.html, maka browser akan otomatis menampilkan pada posisi HTML element dengan id eko
+          - Jika kita ingin membuat link di halaman HTML itu sendiri, kita bisa langsung buka link href langsung berisi #bookmark nya
+    -->
+     <h1>Absolute URL</h1>
+    <!-- Absolute URL  -->
+    <ul>
+      <li>
+        <a href="https://youtube.com">youtube</a>
+      </li>
+      <li>
+        <a href="https://instagram.com/learncodealways">Instagram saya</a>
+      </li>
+      <li>
+        <a href="https://github.com/learncodealways">Github saya</a>
+      </li>
+    </ul>
+   
+    
+   
+     <hr>
+     <h1>Relative URL</h1>
+    <!-- Relative URL -->
+    <ul>
+      <li>
+        <a href="/latihan-link1.html">/latihan-link1</a>
+      </li>
+      <li>
+        <a href="/DASAR-HTML/list.html">/DASAR-HTML/list.html</a>
+      </li>
+      <li>
+        <a href="Latihan/latihan-link2.html">Latihan/latihan-link2.html</a>
+      </li>
+    </ul>
+    
+    
+  
+    <h1>Bookmark</h1>
+    <!-- Bookmark (halaman sendiri)-->
+
+    <ol type="I">
+      <li>
+        <a href="#judul1">judul1</a>
+      </li>
+      <li>
+        <a href="#judul2">judul2</a>
+      </li>
+      <li>
+        <a href="#judul3">judul3</a>
+      </li>
+    </ol>
+    
+    <hr>
+
+    <h1 id="judul1">judul1</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sit ducimus dolores dignissimos deleniti mollitia tenetur minima voluptates officiis exercitationem ad reiciendis iste beatae at quasi doloribus ea minus, neque voluptas accusamus qui delectus ipsam quibusdam. Recusandae pariatur earum numquam asperiores distinctio ipsa, consequatur, repellendus perspiciatis aspernatur et excepturi, vitae quas adipisci mollitia dicta. Est reiciendis laborum consequuntur cum perspiciatis rem nesciunt pariatur repudiandae molestias impedit? Ullam et dolores alias? Perferendis esse dignissimos quidem asperiores numquam ratione natus molestias! Tempore exercitationem veniam atque. Numquam itaque blanditiis, placeat voluptates earum sapiente unde. Atque iusto minima praesentium culpa quisquam similique odit, nesciunt in aut? Corporis laboriosam accusamus velit vel voluptatibus minima reprehenderit voluptas mollitia doloremque voluptatem harum voluptates molestiae, quas amet totam, molestias exercitationem distinctio sint quos iusto quibusdam. Neque, totam. Enim molestias itaque corrupti commodi placeat maxime beatae unde similique consequuntur modi eaque doloremque ullam eveniet voluptatem, odit excepturi? Vitae voluptate odit modi, rem beatae quae corporis libero inventore eligendi, vel aut ipsam delectus? Sequi fuga, voluptates alias laudantium amet consectetur, itaque atque sint incidunt fugiat debitis quos ipsam id expedita recusandae voluptate eligendi odit. Est iste aperiam, cupiditate, unde saepe ratione iure fugit harum alias laborum soluta delectus pariatur aut?</p>
+
+    <hr>
+
+    <h1 id="judul2">judul2</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi hic magnam, obcaecati labore animi, necessitatibus aliquid voluptas officiis eius aut fugiat perspiciatis accusamus ullam recusandae sit sunt, omnis nihil laborum voluptatum deleniti maxime? Nisi aliquam sit accusantium quaerat tempore! Quo, consectetur! Molestias, nam repellendus id eos ipsam accusantium! Eligendi porro natus, distinctio, repellat consectetur alias doloribus quidem omnis deserunt suscipit neque sunt veritatis! Facere explicabo incidunt, libero atque, dolorem doloremque cupiditate dolores praesentium itaque tempore officia vero eaque? Deleniti cumque suscipit ipsum similique quas accusamus! Vel earum consectetur commodi illo exercitationem architecto quam eaque unde maxime asperiores neque eveniet assumenda reiciendis obcaecati dignissimos aut deserunt nisi ipsa, placeat odio enim cum quis dolore. Distinctio earum laborum recusandae. Rem, ullam. Quibusdam provident perspiciatis necessitatibus est id aliquam soluta nihil eos, laboriosam similique unde quasi minus nesciunt dolorum ab fuga eum deleniti magni illum delectus rerum. Iusto laboriosam totam nobis nihil laudantium ut nulla perspiciatis numquam esse odio tenetur, quaerat magnam accusantium doloribus quam velit ipsa impedit earum nemo nesciunt nisi vel sequi dolor! Necessitatibus cum laborum, sapiente nihil doloremque voluptatem cumque autem error delectus deserunt enim asperiores amet labore dignissimos nisi dolores odit officiis repellendus perspiciatis, quas ex? Ipsum, autem corporis.</p>
+
+    <hr>
+
+    <h1 id="judul3">judul3</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt suscipit sequi autem nulla ratione consectetur similique facere dolores doloremque adipisci commodi, deleniti ipsum ad doloribus soluta nobis beatae quibusdam illo quam esse mollitia laudantium iste. Dolorum accusamus iste voluptatem delectus, facere enim quaerat est eum adipisci reprehenderit quidem sapiente nemo hic, earum consequuntur totam. Vel explicabo delectus illum itaque quam, modi ipsa ad magnam nihil reprehenderit, fugiat temporibus cupiditate sequi nulla molestias tempora voluptates magni mollitia. Atque harum quibusdam quasi laborum unde praesentium minima perspiciatis consectetur inventore mollitia ratione eaque dolorem magni iure repellat, officia similique! Saepe natus, tempore expedita quia minus dolores eius nemo sequi deleniti ducimus ratione aliquid error praesentium voluptas porro harum atque minima ab accusantium quam ipsa delectus magnam, quod aut! Quaerat culpa iste mollitia porro magnam veritatis nemo, voluptatibus eveniet error ullam nesciunt debitis laboriosam fuga molestias beatae laborum corrupti cumque repellendus assumenda accusamus modi distinctio itaque qui? Tempore velit recusandae nam alias blanditiis dolores aut nulla cupiditate delectus eveniet voluptas cumque quidem, maxime fugiat similique expedita vitae minima. Ad numquam facere vero magnam omnis dolorum autem dicta ipsam natus consectetur, ea odio earum quasi fuga fugit corporis, soluta eum! Amet obcaecati tenetur delectus culpa.</p>
+
+
+</body>
+</html>
