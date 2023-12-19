@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pre HTML</title>
+</head>
+<body>
+    <!-- Tag pre HTML
+    
+         COMPUTER CODE
+            
+            - Sebagai programmer, kadang kita sering membuat web artikel tentang kode program
+            - Pada kasus seperti ini, ketika kita membuat kode program di HTML menggunakan paragraf, maka akan menyulitkan karena semua enter dan spasi akan dinormalkan oleh HTML
+            - Kadang kita ingin menampilkan kodenya apa adanya
+
+
+            TAG PRE
+             
+              - Untuk menampilkan tulisan di dalam HTML apa adanya, kita bisa menggunakan tag pre  <pre></pre>
+              - Namun perlu diingat, kode HTML tetap tidak akan ditampilkan, jadi kita harus menggunakan HTML Entities
+    -->
+
+    <h1>Belajar kode Javascript dengan tag pre</h1>
+
+    <pre>
+       let nama = "Rama",
+       say;
+          if(nama){
+            say = "Muhammad Ramadhan";
+          }else{
+            say = "nothing";
+          }
+        document.writeln(`${say}`);
+    </pre>
+    <hr>
+
+    <h1>Mari kita bandingkan penulisan kode Javascirpt dengan tag p</h1>
+
+    <p>
+        let nama = "Rama",
+       say;
+          if(nama){
+            say = "Muhammad Ramadhan";
+          }else{
+            say = "nothing";
+          }
+        document.writeln(`${say}`);
+    </p>
+</body>
+</html>
