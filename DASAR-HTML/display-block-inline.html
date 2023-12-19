@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display block dan inline HTML</title>
+</head>
+<body>
+    <!-- Display block dan inline HTML 
+    
+         - Di dalam HTML, semua element memiliki nilai display, tergantun dari jenis element yang digunakan
+         - Secara garis besar, ada dua nilai untuk display, block dan inline
+         
+
+            DISPLAY BLOCK
+             
+              - Element yang memiliki display block, selalu dimulai dengan baris baru.
+              - web browser secara otomatis menambahkan jarak/margin sebelum dan setelah element
+              - Dan element dengan nilai display block, selalu mengambil penuh yang tersedia yang artinya dia akan meregang dari kiri ke kanan
+              - Contoh tag yang menggunakan  nilai displsy block adalah :
+               - h1 s/d h6
+               - p
+               - header
+               - body
+               - ul 
+               - li 
+               - ol
+               - table
+               - form
+               - div
+                  dan lain-lain
+
+
+
+                  DISPLAY INLINE
+
+                    - Sedangkan dalam display inline, element tidak dimulai dengan baris baru, tetapi akan menbuat disamping elementnya , element yang memikiki display nilai inline hanya menggunakan ukuran seperlunya saja
+                    - Contoh tag yang menggunakan nilai display inline :
+                    - a
+                    - span 
+                    - b 
+                    - i 
+                    - em 
+                    - button
+                    - strong
+                    - input
+                       dan lain-lain
+
+
+                    DIV 
+
+                      - Div adalah salah satu tag HTML yang memiliki nilai display block
+                      - Div biasanya digunakan sebagai container(wadah) untuk beberapa element HTML
+                      - Div banyak digunakan ketika kita ingin membedakan bagian-bagian dalam element HTML, misal ada bagian menu, content, footer, header dan lain-lain
+                      - Biasanya semua itu dibungkus dalam element Div
+
+
+
+
+
+                      SPAN
+
+                        - Jika Div menggunakan nilai display block, ada lagi tag span yang menggunakan nilai display inline
+                        - Span biasa digunakan pada kasus kita ingin menggunakan display inline, misal kita membuat tulisan programmer zaman now, namun tiap kata berbeda warna
+                        - Hal itu tidak bisa dilakukan jika menggunakan tag p, karena p akan mengubah seluruh warna tulisan 
+                        - Kita bisa gunakan span di tiap kata, agar bisa menambah style di tiap span
+    
+    -->
+<!-- DISPLAY BLOCK
+             
+              - Element yang memiliki display block, selalu dimulai dengan baris baru.
+              - web browser secara otomatis menambahkan jarak/margin sebelum dan setelah element
+              - Dan element dengan nilai display block, selalu mengambil penuh yang tersedia yang artinya dia akan meregang dari kiri ke kanan
+            
+            salah satu element yang memiliki nilai display block adalah element Div (<div></div>)
+            -->
+    <div style="background-color: aqua;">
+        <h1>Header</h1>
+    </div>
+    <div style="background-color: blue;">
+        <h2>content</h2>
+    </div>
+    <div style="background-color: blueviolet;">
+        <h3>footer</h3>
+    </div>
+
+     <hr>
+
+     <!-- Sedangkan dalam display inline, element tidak dimulai dengan baris baru, tetapi akan membuat disamping elementnya , element yang memikiki display nilai inline hanya menggunakan ukuran seperlunya saja 
+    
+        salah satu element yang memiliki nilai display inline adalah tag span (<span></span>)
+    
+    -->
+
+    <span style="color: aqua;">Programmer</span>
+    <span style="color: blue;">Zaman</span>
+    <span style="color: blueviolet;">Now</span>
+</body>
+</html>
