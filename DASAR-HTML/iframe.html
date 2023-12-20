@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe HTML</title>
+</head>
+<body>
+     <!-- Inlinr Frame (iframe)
+    
+        - Pada saat membuat halaman web, kadang kita ingin menampilkan halaman web lain pada halaman tersebut 
+        - Pada kasus seperti itu, kita bisa menggunakan inline frame atau sering disingkat dan disebut iframe
+        - Inline frame di HTML bisa menggunakan tag iframe (<iframe></iframe>)
+        - Inline frame sangat banyak digunakan oleh banyak orang, contohnya di youtube menggunakan inline frame ketika kita mau menampilkan video youtube di website kita dengan menggunakan link embeded yang terdapat pada youtube
+
+         Berikut adalah beberapa atribut umum yang sering digunakan dalam elemen <iframe> di HTML:
+             
+            - src: Menentukan URL sumber (source) yang akan dimuat di dalam iframe.
+
+            - width dan height: Menentukan lebar dan tinggi iframe.
+
+            - frameborder: Menentukan apakah iframe harus memiliki batas (border) atau tidak. Nilai "0" berarti tidak ada batas, dan "1" berarti ada batas nilai defaultnya adalah 1
+
+            - scrolling: Mengontrol apakah iframe harus menampilkan bilah geser. Nilai yang umum digunakan adalah "yes" (menampilkan bilah geser) atau "no" (tidak menampilkan bilah geser).
+
+            - sandbox: Menerapkan suatu "sandbox" untuk iframe, membatasi beberapa kebijakan keamanan. Nilai umum termasuk "allow-same-origin", "allow-scripts", dan sebagainya.
+
+            - name: Menentukan nama untuk iframe, yang dapat digunakan sebagai target untuk tautan atau formulir.
+
+            - allow: Mengizinkan sejumlah fitur untuk dijalankan di dalam iframe, seperti fitur-fitur API yang terkait dengan kamera, mikrofon, dll.
+
+            - loading: Menentukan kapan dan bagaimana iframe harus dimuat. Nilai umum termasuk "eager" (segera dimuat) dan "lazy" (dimuat saat diperlukan).
+ 
+               Itulah beberapa atribut umum yang dapat digunakan dalam elemen <iframe> untuk mengontrol perilaku dan penampilan iframe di halaman web.
+    -->
+
+    <h1>Belajar tag iframe menampilkan halaman list.html</h1>
+
+    <iframe src="/DASAR-HTML/list.html" frameborder="0" width="800px" height="800px" scrolling="no"></iframe>
+
+    <hr>
+
+    <h1>Belajar tag iframe menampilkan halaman dari youtube dengan menggunakan fitur link embeded youtube</h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/hMDJyb7VkYw?si=WFOCtP0K6QUB4rDq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
