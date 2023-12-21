@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table HTML</title>
+</head>
+<body>
+    <!-- Table HTML
+    
+       - Tag table, digunakan untuk membuat tabel
+       - Tag tr untuk membuat row / baris
+       - Tag th untuk membuat kolom header table
+       - Tag td untuk membuat kolom isi table
+       - Tag caption untuk keterangan table
+       - Tag thead untuk grup header table
+       - Tag tbody untuk group isi table
+       - Tag tfoot untuk group footer table
+
+
+
+            Colgroup
+            
+            - Kadang kita ingin memberi style untul kolom, jika dilakukan satu-satu, maka akan menyulitkan
+            - Kita bisa menggunakan tag colgroup untuk membuat group kolom dan tag col untuk tiap kolomnya
+            -Jika kita ingin menambahkan style ke lebih dari satu kolom dengan style yang sama, kita bisa gunakan atribut span="(jumlah pad tag col nya)"
+
+
+
+            Colspan dan Rowspan
+             
+              - Saat kita membuat table, kadang kita ingin menggabungkan beberapa kolom atau beberapa baris, sehingga terlihat menjadi satu kolom
+              - Pada kasus itu, kita bisa menggunakan atribut colspan untuk menggabungkan beberapa kolom dalam satu baris yang sama
+              - Atau menggabungkan atribut row span untuk menggabungkan beberapa kolom di baris yang berbeda
+    -->
+
+    <table  border="1px" cellpadding="10" cellspacing="0">
+      <thead>
+        <colgroup>
+           <col span="2" style="background-color: aquamarine;">
+        </colgroup>
+        <tr>
+            <th colspan="2">Nama</th>      
+            <th colspan="3">Tanggal Lahir</th>
+            
+        </tr>
+      </thead>
+         <tbody>
+            <tr> 
+                
+                <td>Muhammad</td>
+                <td>Ramadhan</td>
+                <td>06</td>
+                <td>11</td>
+                <td>2002</td>
+            </tr>
+         </tbody>
+         <tfoot>
+            <th colspan="2">Nama</th>
+            <th colspan="3">Tanggal Lahir</th>
+            
+         </tfoot>
+    </table>
+</body>
+</html>
