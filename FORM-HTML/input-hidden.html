@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Hidden HTML</title>
+</head>
+<body>
+    <!-- Input Hidden HTML
+    
+        - Di HTML, terdapat fitur input type hidden
+        - Input type hidden artinya input datanya tidak terlihat oleh pengguna web
+        - Biasanya input data hidden memang tidak dimaksudkan untuk diinputkan oleh pengguna, biasanya pada kasus-kasus tertentu input data hidden digunakan untuk informasi yang dibuat secara otomatis oleh web kita dan tidak butuh diubah atau dilihat oleh pengguna
+        - Misalnya id tiap tiap username yang terintegrasi  dengan database tidak bisa diubah, kalau diubah bisa menyebabkan error untuk mengatasi hal itu kita bisa menggunakan input type hidden
+    -->
+
+    <form name="hidden" method="get" target="_self" action="/FORM-HTML/input-hidden.html">
+        <input type="hidden" name="id" id="id">
+        <label for="nama">Nama :</label>
+        <input type="text" name="nama" id="nama" required><br>
+        <input type="submit" value="ubah">
+    </form>
+</body>
+</html>
