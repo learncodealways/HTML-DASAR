@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Time HTML</title>
+</head>
+<body>
+    <!-- Input Time HTML
+        
+            - Jika kita hanya membutuhkan informasi jam dan menit, kita bisa menggunakan input type time
+            - Input type time menggunakan format hh:mm
+            - hh adalah jam dalam 2 digit
+            - mm adalah menit dalam 2 digit
+            - Untuk membatasi minimal dan maksimal waktu yang dipilih, kita bisa gunakan atribut min dan max
+             - required (digunakan untuk menandai bahwa input wajib diisi)
+            - Value (Menetukan nilai awal)(opsional)
+    -->
+    <form name="kalender_kerja" action="/FORM-HTML/input-time.html">
+        <label for="jam_masuk">Jam Masuk :</label>
+        <input type="time" name="jam_masuk" id="jam_masuk" value="08:00" min="08:00" max="08:30"><br>
+        <label for="jam_keluar">Jam Keluar :</label>
+        <input type="time" name="jam_keluar" id="jam_keluar" value="18:00" min="17:00" max="18:00"><br>
+        <input type="submit" value="Simpan">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
