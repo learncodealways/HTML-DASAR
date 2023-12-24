@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=yvvv7, initial-scale=1.0">
+    <title>Input Checkbox HTML</title>
+</head>
+<body>
+    <!-- Input Checkbox HTML
+    
+        - Input checkbox adalah input dengan tipe ceklis, dimana kita bisa menceklis atau tidak menceklis input tersbut
+        - Biasanya, checkbox digunakan untuk menerima input lebih dari satu, namun inputnya sudah disesuaikan
+
+        Atrribute Input Checkbox :
+        - type: Menentukan tipe elemen input, dalam hal ini "checkbox".
+        - name: Menentukan nama elemen input yang akan dikirimkan ke server saat formulir diserahkan.
+        - value: Menentukan nilai yang akan dikirimkan ke server ketika checkbox dicentang dan formulir diserahkan.
+        - checked: Menentukan apakah checkbox harus dicentang secara default atau tidak.
+        - disabled: Menonaktifkan checkbox sehingga tidak dapat diubah oleh pengguna.
+        - id: Memberikan identifikasi unik untuk elemen input, berguna untuk penggunaan CSS atau JavaScript.
+        - class: Menentukan satu atau lebih kelas CSS untuk elemen, memungkinkan penggunaan gaya tertentu.
+        - onclick: Menentukan skrip JavaScript yang akan dijalankan ketika checkbox diklik.
+        - required (digunakan untuk menandai bahwa input wajib diisi).
+
+
+
+    -->
+
+    <form name="checkbox" action="/FORM-HTML/input-checkbox.html" method="get" target="_self">
+
+          <input type="checkbox" name="hobby" id="coding" value="coding" checked>
+          <label for="coding">Coding</label><br>
+          <input type="checkbox" name="hobby" id="Gaming" value="Gaming" checked>
+          <label for="Gaming">Gaming</label><br>
+          <input type="checkbox" name="hobby" id="learning" value="Learning" checked>
+          <label for="learning">Learning</label><br>
+          <input type="reset" value="Reset">
+         <input type="submit" value="Kirim"><br>
+         <input type="checkbox" name="verifikasi" id="verify" checked >
+         <label for="verify">Saya menyetujui ketentuan ini.</label>
+    </form>
+</body>
+</html>
