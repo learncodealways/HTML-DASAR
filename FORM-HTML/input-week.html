@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Week HTML</title>
+</head>
+<body>
+    <!-- Input Week HTML
+    
+        - Input type week digunakan untuk menerima input minggu dalam satu tahun
+        - Total minggu dalam satu tahun berkisar antara 52 - 53, artinya  itu adalah maksimal nilai untuk week
+        - Format penulisan week bisa menggunakan pola yyyy-Www
+            - yyy(adalah tahun 4 digit)
+            - ww (adalah minggu dalam 2 digit)
+            - min dan max  (Menentukan nilai minimum dan maksimum yang dapat dipilih oleh pengguna. Format untuk nilai ini juga harus sesuai dengan "YYYY-Www").
+            - value (Menentukan nilai awal untuk elemen input. Nilai ini harus berupa string yang sesuai dengan format "YYYY-Www" tahun dan minggu).
+            - step (Menentukan interval atau langkah antara nilai-nilai yang dapat dipilih. Nilai defaultnya adalah 1 minggu).
+            - disabled (Jika ditentukan, maka elemen input akan dinonaktifkan dan tidak dapat diubah oleh pengguna).
+             - required (digunakan untuk menandai bahwa input wajib diisi).
+    -->
+
+    <form name="week" action="/FORM-HTML/input-week.html" target="_self" method="get">
+        <label for="minggu_awal">Minggu Awal :</label>
+        <input type="week" name="minggu_awal" id="minggu_awal" required value="2023-W01"><br>
+        <label for="minggu_akhir">Minggu Akhir :</label>
+        <input type="week" name="minggu_akhir" id="minggu_akhir" required value="2023-W52"><br>
+        <input type="submit" value="Simpan">
+        <input type="reset" value="Reset">
+        
+
+    </form>
+</body>
+</html>
