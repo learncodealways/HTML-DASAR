@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Email HTML</title>
+</head>
+<body>
+    <!-- Input Email HTML
+        
+        - Input email adalah input text, namun informasi yang dimasukkan haruslah dalam format email
+        - Jika format email tidak benar, secara otomatis form tidak akan bisa disubmit
+
+          Atribut Input Email 
+            - value: Menentukan nilai awal untuk elemen input.
+            - placeholder: Menyediakan teks contoh atau petunjuk yang muncul dalam kotak input sebelum pengguna memasukkan nilai.
+            - required: Jika ditentukan, maka elemen input wajib diisi sebelum formulir dapat dikirim.
+            - disabled: Jika ditentukan, maka elemen input akan dinonaktifkan dan tidak dapat diubah oleh pengguna.
+            - readonly: Jika ditentukan, maka elemen input menjadi hanya-baca dan tidak dapat diubah oleh pengguna.
+            - size dan maxlength: Menentukan lebar dan panjang maksimum elemen input.
+
+    -->
+       <form name="email" action="/FORM-HTML/input-email.html" method="get" target="_self">
+
+           <label for="email">Email :</label>
+           <input type="email" name="email" id="email" required placeholder="user@gmail.com"><br>
+           <input type="submit" value="Kirim">
+           <input type="reset" value="Batal">
+       </form>
+</body>
+</html>
