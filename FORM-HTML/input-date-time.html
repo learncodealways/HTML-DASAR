@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input DateTime HTML</title>
+</head>
+<body>
+    <!-- Input DateTime HTML
+      
+        - Jika untuk input tanggal bisa menggunakan type date, jika kita butuh sampai ke menit, kita bisa menggunakan input DateTime, yaitu menggunakan type datetime-local
+        - Format value untuk date time adalah yyyy-mm-ddThh:mm
+          - YYYY(adalah tahun dalam 4 digit)
+          - MM(adalah bulan dalam 2 digit (01-12))
+          - DD (tanggal dalam 2 digit (01-31))
+          - T (Pemisah antara tanggal dan waktu)
+          - hh (adalah jam dalam dua digit dengan format 24 jam (00-23))
+          - mm (adalah menit dalam dua digit (00-59))
+          - Value (Menetukan nilai awal)(opsional)
+          -  required (digunakan untuk menandai bahwa input wajib diisi)
+
+        - Untuk membatasi minimal dan maksimal waktu yang pilih, kita bisa gunakan atribut min dan max
+    -->
+
+    <form name="waktu" method="get" target="_self" action="/FORM-HTML/input-date-time.html">
+        <label for="waktu">Tanggal dan waktu :</label>
+        <input type="datetime-local" name="waktu" id="waktu" required value="2020-12-31T07:00">
+        <input type="submit" value="Simpan">
+        <input type="reset" value="Clear">
+    </form>
+</body>
+</html>
