@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input File HTML</title>
+</head>
+<body>
+    <!-- Input File HTML
+    
+        - Input dengan type file, digunakan untuk meng-upload atau mengunggah berkas file dari komputer kita 
+        - Saat kita membuat input dengan type fil, maka agar form mengirim berkas file-nya, kita harus gunakan method post dan juga enctype multipart/form-data
+    -->
+
+    <form name="file" method="post" target="_self" action="/FORM-HTML/input-file.html">
+        <label for="file">file :</label>
+        <input type="file" name="file" id="file" required>
+        <input type="submit" value="Kirim">
+    </form>
+</body>
+</html>
