@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Month HTML</title>
+</head>
+<body>
+    <!-- Input Month HTML
+    
+    - Input type month digunakan untuk input informasi berupa tahun dan bulan
+    - Format value untuk input type month adalah yyyy-mm
+        - yyyy(adalah 4 digit tahun)
+        - mm(adalah 2 digit bulan)
+    - Untuk membatasi minimal dan maksimal bulan yang dipilih, kita bisa gunakan atribut min dan max
+     - required (digunakan untuk menandai bahwa input wajib diisi)
+     - Value (Menetukan nilai awal)(opsional)
+    -->
+
+    <form name="kadaluarsa" action="/FORM-HTML/input-month.html" method="get" target="_self">
+        <label for="kadaluarsa">Waktu kadaluarsa :</label>
+        <input type="month" name="kadaluarsa" id="kadaluarsa" required>
+        <input type="submit" value="Simpan Perubahan">
+        <input type="reset" value="Reset Perubahan">
+       
+    </form>
+</body>
+</html>
