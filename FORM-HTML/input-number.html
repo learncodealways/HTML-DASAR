@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Number HTML</title>
+</head>
+<body>
+    <!-- Input Number
+        -Input type number adalah input untuk informasi number atau angka 
+        - Jika kita menginputkan bukan number atau angka, secara otomatis HTML menganggap nilainya tidak valid
+        - Untuk input type number, kita bisa gunakan atribut tambahan yaitu min dan max
+            - min (digunakan untuk mengatur nilai minimal angka)
+            - max (digunakan untuk mengatur nilai maksimal angka)
+            - required (digunakan untuk menandai bahwa input wajib diisi)
+            - Value (Menetukan nilai awal)(opsional)
+    -->
+    <form name="angka" target="_self" method="get">
+        <label for="nilai">Nilai UAS :</label>
+        <input type="number" name="nilai" id="nilai" required value="0" min="0" max="100">
+        <input type="submit" value="Simpan">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
