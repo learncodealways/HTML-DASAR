@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Input Reset HTML</title>
+</head>
+<body>
+    <!-- Input Reset HTML
+     
+        - Input dengan type reset, adalah input yang akan ditampilkan dalam bentuk tombol
+        - Jika tombol reset tersebut diklik, maka seluruh input di form tersebut, nilainya akan berubah menjadi nilai default seperti yang terdapat di attribute value nya
+    -->
+
+    <form action="/FORM-HTML/input-submit.html" method="get" target="_self">
+        <label for="nama">Nama :</label><br>
+        <input type="text" name="nama" id="nama" value="nama"><br>
+        <label for="alamat">Alamat :</label><br>
+        <input type="text" name="alamat" id="alamat" value="alamat"><br>
+        <input type="reset" value="Reset" aria-valuemax="user"><br>
+    </form>
+    <!-- jika tombol reset diklik maka dia akan kembali ke valuenya yang di form input yaitu "nama dan alamat" -->
+</body>
+</html>
