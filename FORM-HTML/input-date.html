@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Date HTML</title>
+</head>
+<body>
+    <!-- Input Date HTML
+    
+      - Input type date, adalah jenis input untuk menerima informasi berupa tanggal (tahun, bulan dan tanggal)
+      - Jika kita ingin mengubah nilai value di input type date, kita bisa menggunakan format yyyy-mm-dd
+         - yyyy(adalah tahun dalam 4 digit)
+         - mm(adalah bulan dalam 2 digit)
+         - dd(adalah tanggal dalam 2 digit)
+      - Untuk membatasi minimal dan maksimal tanggal yang dipilih, kita bisa gunakan atribut min dan max
+         - min (tanggal minimal yang bisa dipilih)
+         - max (tanggal maksimal yang bisa dipilih)
+         - required (digunakan untuk menandai bahwa input wajib diisi)
+    -->
+
+    <form name="tanggal" action="/FORM-HTML/input-date.html" method="get" target="_self">
+
+        <label for="join_date">Tanggal :</label>
+        <input type="date" name="join_date" id="join_date" value="2023-12-24" min="2020-12-31" max="2024-12-31" required> 
+        <input type="submit" value="Simpan">
+
+    </form>
+</body>
+</html>
