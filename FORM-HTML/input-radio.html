@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Radio HTML</title>
+</head>
+<body>
+    <!-- Input Radio HTML
+        
+        - Input type radio merupakan input untuk informasi pilihan
+        - Pada checkbox, kita bisa memilih lebih dari satu checkbox walaupun menggunakan name yang sama
+        - Sedangkan pada radio, kita hanya bisa memilih salah satu saja radio pada input name yang sama 
+        - Input ini cocok untuk input data pilihan ganda misalnya
+
+            
+            Attribute Input Radio
+
+                - name: Menentukan nama grup untuk mengelompokkan radio button. Nama grup ini diperlukan untuk memastikan bahwa pengguna hanya dapat memilih satu opsi dari grup tersebut.
+                - value: Menentukan nilai yang akan dikirimkan ke server jika radio button terpilih.
+                - checked: Menandakan apakah radio button harus terpilih secara default. Jika atribut ini hadir, radio button akan terpilih secara otomatis.
+                - disabled: Menandakan apakah radio button harus dinonaktifkan atau tidak dapat diakses oleh pengguna.
+
+    -->
+    <form name="pilgan" action="/FORM-HTML/input-radio.html" method="get" target="_self">
+
+        <p>Budi memiliki uang sebesar Rp. 20000 dan ia top diamond free fire dengan nominal Rp. 10000, berapakah sisa uang Budi sekarang?</p>
+        <input type="radio" name="pilgan" id="pilgan1" value="A">
+        <label for="pilgan1">A. Rp.10000</label><br>
+        <input type="radio" name="pilgan" id="pilgan2" value="B">
+        <label for="pilgan2">B. Rp.5000</label><br>
+        <input type="submit" value="Kirim">
+    </form>
+</body>
+</html>
