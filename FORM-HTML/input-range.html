@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Range HTML</title>
+</head>
+<body>
+    <!-- Input Range HTML
+        
+        - Input type range adalah input untuk number / amgka namun ditentukan jangkauan minimal dan maksimalnya
+        - Ini mirip seperti input number, yang membedakan adalah bentuk komponen inputnya tidak seperti input text, melainkan dalam bentuk slider, yang bisa di tarik ke kiri untuk menurukan nilai dan ke kanan untuk menaikkan nilai
+        - Secara default, nila range naik bertahap sebanyak +1 atau berkurang -1, namun jika kita ingin mengubah nilai naik dan turunya, kita bisa tambahkan attribute step
+
+          Attribute input range
+             
+          - step : mengubah range input range (misal kita setting step="2" , maka nilai range naik bertahap sebanyak +2 dan berkurang sebanyak -2)(opsional)
+          - min : nilai minimal range(opsional)
+          - max : nilai maksimal range(opsional)
+          - value : Nilai awal yang akan diinilisiasi(opsional)
+    -->
+
+    <form name="range" action="/FORM-HTML/input-range.html" method="get" target="_self">
+
+            <label for="kecerahan">Kecerahan :</label>
+            <input type="range" name="kecerahan" id="kecerahan" value="0" step="2" min="0" max="100">
+            <input type="submit" value="Kirim">
+    </form>
+</body>
+</html>
