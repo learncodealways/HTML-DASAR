@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Field Set HTML</title>
+</head>
+<body>
+    <!-- Field Set HTML 
+    
+        - Tag fieldset digunakan untuk membungkus / grouping beberapa input sehingga lebih mudah untuk dimengerti ketika dilihat oleh pengguna
+        - Menggunakan fieldset tag sangat baik ketika misal input data sangat banyak dan kita ingin melakukan grouping input data yang sesuai
+        - Contoh ketika registrasi, dibutuhkan identitas, alamat dan lain-lain, kita bisa grouping berdasarkan input data yang sesuai
+    -->
+
+
+    <h3>Contoh default</h3>
+
+  
+    <form name="field-set-tag" action="/FORM-HTML/field-set-tag.html" method="get" target="_self">
+
+        <fieldset>
+            <legend>Identitas</legend>
+           
+            <label for="email">Email :</label> <input type="email" name="email" id="email" required><br><br>
+          
+            <label for="password"> Password :</label>
+           <input type="password" name="password" id="password" required><br><br>
+
+           <button type="submit">Kirim
+           </button>
+        </fieldset>
+    </form><br><br>
+
+
+
+
+    <h3>Contoh Modifikasi</h3>
+
+     <fieldset>
+        <legend>Identitas</legend>
+        <form name="field" action="/FORM-HTML/field-set-tag.html" method="get" target="_self">
+            <fieldset>
+    
+    
+               <legend>Email</legend>
+           <input type="Email" name="email" id="Email" required>
+            </fieldset>
+    
+            <fieldset>
+               <legend>Password</legend>
+               <input type="password" name="pass" id="pass" required>
+
+               
+            </fieldset><br><br>
+
+            <button type="submit">Kirim</button>
+           
+       </form>
+      
+
+     </fieldset>
+   
+   
+</body>
+</html>
