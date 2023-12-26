@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data List HTML</title>
+</head>
+<body>
+    <!-- Data List HTML
+
+        - Saat melakukan pencarian di Google misalnya, kita sering melihat rekomendasi berupa autocomplete kata- kata yang ingin kita cari
+        - Saat kita membuat input type text, kita bisa menambahkan sumber data yang bisa dijadikan sebagai rekomendasi input value, juga autocomplete
+        - Kita bisa menggunakan datalist tag
+        - Di dalam datalist tag, kita bisa gunakan option tag
+        - Untuk menghubungkan dari input type text ke datalist, kita bisa menggunakan atribut list yang mengacu ke id datalist
+
+        -->
+
+        <form name="datalist" action="/FORM-HTML/data-list.html" method="get" target="_self">
+
+            <label for="nama">Nama :</label>
+            <input type="text" name="nama" id="nama" list="hobby"><br>
+            <button type="submit">Kirim</button>
+            <button type="reset">Reset</button>
+
+            <datalist id="hobby">
+                <option value="coding">Coding</option>
+                <option value="gaming">Gaming</option>
+              
+            </datalist>
+
+           
+        </form>
+</body>
+</html>
