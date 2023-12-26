@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select HTML</title>
+</head>
+<body>
+    <!-- Select HTML
+    
+        - Select tag adalah alternatif lain seperti input type radio
+        - Saat menggunakan input type radio, jika opsi pilihan terlalu banyak, maka tampilan input akan sangat panjang
+        - Select tag menawarkan solusi yang sederhana, dimana input akan seperti type text,  namun kita bisa memilih opsi pilihan seperti radio
+
+           
+               
+                1. Option tag
+                    - Untuk menambah opsi piliha dalam select tag, kita bisa menggunakan option tag
+                    - Option tag memiliki atribut value sebagai nilainya, namun untuk ditampilkan dalam web browser, kita bisa isi option tag dengan content misal text
+                    - Selain itu, jika kita ingin memilih secara default salah satu option, kita bisa menggunakan atribut selected
+
+                2. Multiple
+                    - Salah satu kelebihan dibandingkan radio type, diaman select tag, jika misal kita bisa memilih beberapa opsi pilihan seperti checkbox, kita bisa gunakan atribut multiple
+                    - Untuk menentukan seberapa besar tampilan ketika menggunakan mode multiple, kita bisa gunakan atribut size
+                    - Untuk memilih banyak kita bisa menggunakan ctrl pada keyboard saat memilih yang lain
+
+                3. Option Group Tag
+                    - Saat pilihan option sangat banyak, kadang ada baiknya kita buat option dalam grup
+                    - Hal ini akan membuat pengguna lebih mudah ketika melakukan pemilihan
+                    - Kita bisa bungkus option dalam grup menggunakan optgroup tag 
+                    - Dan untuk menambahkan deskripsi grup, kita bisa gunakan atrubut label
+
+
+    -->
+        <h3>Contoh select tag default</h3>
+    <!-- contoh pengguaan select tag default -->
+        <form  name="default_select" action="/FORM-HTML/select-tag.html" method="get" target="_self">
+
+            <select name="hobby" id="hobby">
+                <option value="coding" selected>Coding</option>
+                <option value="gaming">Gaming</option>
+                <option value="trading">Trading</option>
+            </select>
+            <button type="submit">Kirim</button>
+            <button type="reset">Reset</button>
+        </form><br>
+
+        <h3>Contoh select tag dengan multiple</h3>
+        <!-- contoh penggunaan select tag dengan multiple tanpa atribut size -->
+
+        <form name="multiple_select" action="/FORM-HTML/select-tag.html" method="get" target="_self">
+            <select name="hobby" id="hobby" multiple>
+                <option value="coding">Coding</option>
+                <option value="gaming">Gaming</option>
+                <option value="trading">Trading</option>
+                <option value="heking">Heking</option>
+                <option value="running">Running</option>
+                <option value="riding">Riding</option>
+            </select>
+            <button type="submit">Kirim</button>
+            <button type="reset">reset</button>
+        </form><br><br>
+
+
+
+
+        <h3>Contoh select tag multiple dengan atribut size</h3>
+        <!-- contoh penggunaan select tag multiple dengan atribut size -->
+
+        <form name="multiple_size" action="/FORM-HTML/select-tag.html" method="get" target="_self">
+
+            <select name="hobby" id="hobby" multiple size="2">
+                <option value="coding">Coding</option>
+                <option value="gaming">Gaming</option>
+                <option value="trading">Trading</option>
+                <option value="heking">Heking</option>
+                <option value="running" selected>Running</option>
+                <option value="riding">Riding</option>
+            </select>
+            <button type="submit">Kirim</button>
+            <button type="reset">Reset</button>
+
+        </form><br><br>
+
+
+
+        <!-- contoh select tag dengan option group tag -->
+
+        <form name="opt_group" action="/FORM-HTML/select-tag.html" target="_self" method="get">
+
+            <select name="hobby" id="hobby">
+                <optgroup label="coding">
+                    <option value="js">JavaScript</option>
+                    <option value="php">PHP</option>
+                    <option value="py">Python</option>
+                </optgroup>
+                <optgroup label="Gaming">
+                    <option value="ml">Mobile Legend</option>
+                    <option value="pes">PES</option>
+                    <option value="fifa">FIFA</option>
+                </optgroup>
+                <optgroup label="Sport">
+                    <option value="running">Running</option>
+                    <option value="bikecycle">Bikecylce</option>
+                    <option value="swimming">Swimming</option>
+                </optgroup>
+            </select>
+            <button type="submit">Kirim</button>
+            <button type="reset">Reset</button>
+        </form>
+
+
+
+</body>
+</html>
